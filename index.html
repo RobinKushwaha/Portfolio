@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHFS-Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 2px;
+        }
+
+        body {
+            background-color: rgb(38, 38, 240);
+            color: white;
+            font-family: "Rubik", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: centre;
+            height: 100px;
+            background-color: rgb(16, 16, 63);
+            text-align: center;
+            padding-top: 45px
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(160, 160, 255);
+            font-size: 2.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: antiquewhite;
+            
+            margin: 20px 54px;
+        }
+
+        .left {
+            font-size: 2.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 3rem;
+            margin: 30px 0;
+
+        }
+
+        .rightSection img {
+
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: rgb(103, 235, 100);
+        }
+
+        #element {
+            color: rgb(103, 235, 100);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 126vh;
+            height: 2px;
+            margin: 60px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            background-color: white;
+            height: 90px;
+            width: 0.5px;
+            margin: 0 90px;
+
+        }
+
+       
+        .vertical-title {
+            position: relative;
+            top: 93px;
+            width: 150px;
+            
+            padding-top: 20px;
+            
+        }
+        .footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffdd57;
+}
+
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.skills-tree {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.tree-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tree-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.tree-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.tree-connector {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  width: 2px;
+  height: 100%;
+  background-color: #4f46e5;
+}
+
+.tree-list li:last-child .tree-connector {
+  height: 10px; /* stop the line at the last item */
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Robin's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name Is <span class="purple">Robin</span>
+                <div>And I Am A Passionate </div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="skills-tree">
+  <h2 class="tree-title">My Skills</h2>
+  <ul class="tree-list">
+    <li><span class="tree-connector"></span>Frontend Development</li>
+    <li><span class="tree-connector"></span>Tailwind CSS</li>
+    <li><span class="tree-connector"></span>Algorithms</li>
+    <li><span class="tree-connector"></span>Debugging</li>
+    <li><span class="tree-connector"></span>Problem Solving</li>
+  </ul>
+</section>
+
+
+    </main>
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <h2 class="footer-logo">Robin's Portfolio</h2>
+    
+    <p class="footer-copy">© 2025 MyWebsite. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Problem Solver.', 'Maths Tutor.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
